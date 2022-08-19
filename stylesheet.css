@@ -49,16 +49,16 @@ a{
 
 .video-bg {
     position: relative;
-    height: 70vh;
+    height: 68vh;
     width: 100%;
     cursor: default;
-    /* max-width: 1600px; */
+    max-width: 1920px;
+    margin: auto;
 }
 .video-bg img{
     visibility: hidden;
 }
 video{
-    max-width: 100%;
     position: absolute;
     width: auto;
     height: auto;
@@ -68,23 +68,21 @@ video{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 1600px;
 }
 
 .btn {
     margin: auto;
     padding: 0;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    /* transform: translateX(-50%) translateY(-50%); */
+    position: static;
     text-align: center;
-    padding: 1rem;
+    background-color: var(--Gold);
+    height: 8rem;
 }
+
 .btn h1{
     padding: 1rem 0;
     text-transform: capitalize;
-    color: var(--pink);
+    color: var(--white);
 }
 
 .order-btn{
@@ -117,11 +115,12 @@ h2{
     color: var(--dark-Blue);
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .container {
     display: flex;
+    position: static;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,7 +128,6 @@ h2{
     max-width: 1200px;
     margin: auto;
     padding-bottom: 2rem;
-    padding-top: 5rem;
 }
 
 .collection{
@@ -192,8 +190,6 @@ h3{
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    /* padding: 0 10rem 0 17rem ; */
-    /* display: relative; */
     font-size: 1.1rem;
     color: var(--white);
     
@@ -244,6 +240,7 @@ font-size: 2rem;
     align-items: center;
     text-transform: capitalize;
     color: var(--white);
+    font-size: 1.6rem;
 }
 
 .contact-main > h2{
@@ -279,7 +276,6 @@ footer{
     justify-content: center;
     align-items: center;
     height: 9rem;
-    
 }
 footer >p{
     color: var(--white);
@@ -294,13 +290,24 @@ footer > img{
             /* /////////////////////////////////////////////// */
 
 @media screen and (Max-width: 750px){
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        color: var(--dark-Blue);
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 9rem;
+    }
+    .btn {
+        visibility:hidden;
+    }
 
-    /* .video-bg img{
+    .video-bg img{
         visibility: visible;
         position: relative;
         z-index: -1;
-        bottom: 25%;
-    } */
+        bottom: 5rem;
+    }
 
     .testemonials{
         width: 100%;
@@ -312,7 +319,7 @@ footer > img{
     }
 
     .video-bg video {
-        /* visibility: hidden; */
+        visibility: hidden;
     }
     ul li{
         visibility: hidden;
@@ -321,9 +328,8 @@ footer > img{
         margin: 0;
         padding: 0;
         position: absolute;
-        top: 30%;
-        left: 30%;
-        /* transform: translateX(-50%) translateY(-50%); */
+        margin: auto;
+        left: 20%;
         text-align: center;
         padding: 1rem;
     }
@@ -345,13 +351,24 @@ footer > img{
         right: 7%;
         top: 8%;
     }
+
     .map{
         visibility: hidden;
     }
-    .contact-us .contact{
-        height: 15rem;
-
+    .contact-main > h2{
+        background-color: var(--dark-Blue);
+        color: var(--Gold);
+        display: block;
+        text-transform: capitalize;
     }
+    footer{
+        background-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
                        /* /////////////////////////////////////////////// */
 
@@ -371,9 +388,7 @@ footer > img{
         padding-top: 15rem;
     }
     .contact-us .contact {
-        /* height: 400px; */
         width: 400px;
-        /* padding-bottom: -2rem; */
         padding-top: 2rem;
         margin: -20px;
         background-color: transparent;
@@ -387,15 +402,12 @@ footer > img{
         justify-content: center;
         align-items: center;
         height: 15rem;
-        /* margin-top: 6rem; */
     }
     .map iframe{
         position: relative;
         bottom: 8.5rem;
         padding: 2rem;
-        /* top: 1rem; */
-        /* z-index: 1; */
-        /* height:10rem; */
+        
     }
 
 }
