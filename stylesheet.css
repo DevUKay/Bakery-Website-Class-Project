@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
     overflow-x:clip;
-    
+    scroll-behavior: smooth;
 }
 
 html{
@@ -73,7 +73,8 @@ video{
 .btn {
     margin: auto;
     padding: 0;
-    position: static;
+    /* position: static; */
+    margin-top: 2rem;
     text-align: center;
     background-color: var(--Gold);
     height: 8rem;
@@ -117,6 +118,20 @@ h2{
     font-weight: bold;
     padding-top: 5rem;
 }
+.btt1{
+    position: absolute;
+    left: 90%;
+}
+
+.BTT >img{
+    position: fixed;
+    top: 50rem;
+    right: 10rem;
+    height: 50px;
+    background-color: #f8f8f8;
+    opacity: .8;
+}
+
 
 .container {
     display: flex;
@@ -298,16 +313,22 @@ footer > img{
         font-weight: bold;
         padding-top: 9rem;
     }
-    .btn {
-        visibility:hidden;
-    }
-
+  
     .video-bg img{
         visibility: visible;
         position: relative;
         z-index: -1;
         bottom: 5rem;
     }
+
+.BTT >img{
+    position: fixed;
+    top: 52rem;
+    right: .7rem;
+    height: 35px;
+    background-color: #f8f8f8;
+    opacity: .5;
+}
 
     .testemonials{
         width: 100%;
@@ -324,7 +345,7 @@ footer > img{
     ul li{
         visibility: hidden;
     }
-    .btn {
+    /* .btn {
         margin: 0;
         padding: 0;
         position: absolute;
@@ -332,13 +353,33 @@ footer > img{
         left: 20%;
         text-align: center;
         padding: 1rem;
+    } */
+
+    .btn {
+        margin: auto;
+        padding: 0;
+        /* position: static; */
+        margin-top: 2rem;
+        text-align: center;
+        background-color: var(--dark-Blue);
+        height: 8rem;
     }
     .btn h1{
         padding: 1rem 0;
         text-transform: capitalize;
         color: var(--pink);
         font-size: 1.5rem;
-    }
+    } 
+    
+.order-btn{
+    background-color: var(--Gold);
+    border-radius: 10px;
+    align-items: center;
+    padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
     .logo{
         height: 5rem;
         position: absolute;
